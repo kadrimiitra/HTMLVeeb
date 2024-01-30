@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap">
+    <style>
+      body{
+        font-family: 'Montserrat', sans-serif;
+
+      }
+      .sitename{
+        font-size: 32px;
+        font-weight:600;
+      }
+      .headers{
+        font-weight: 300;
+      }
+      .card-text{
+        font-weight: 200;
+      }
+        .container{
+            max-width: 1200px;
+        }
+
+      .card{
+        border: none;
+      }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .vertical-line {
+    border-left: 1px solid #000;
+    height: 15px;
+    vertical-align: middle;
+    padding-top: 30px;
+  }
+  .bi{
+    color: black;
+  }
+  .hover:hover{
+    background-color:rgb(79, 79, 79) ;
+  }
+  .hover:hover .card-body {
+  color: white;
+}
+
+  .card-header {
+    border-bottom: none;
+}
+.small-button {
+  width: fit-content;
+}
+.container-text{
+  margin-top: 80px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="searchModalLabel">Search</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Enter your search query...">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block ">
+            <div class="container">
+              <div class="navbar-nav ms-auto d-flex align-items-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-envelope"></i> jaan@kadri.com</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-headphones"></i> +123456789</a>
+                  </li>
+                  <div class="vertical-line"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+        <div class="container-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand sitename">Kadri</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Avaleht</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tooted</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Teenused</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="background-color: rgb(18, 126, 233); color: #fff;">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero">
+          <div class="row row-cols-1 row-cols-md-2 g-2 px-2 m-4">
+              <div class="col">
+                  <div class="card h-80">
+                      <img src="bs1man.jpg" alt="businessman">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <h1 class="card-title headers">Tõestan, et oskan Bootstrappi</h1>
+                          <p class="card-text">Tegelikult oskan täiega HTML, CSS ja Bootstrap APIt. Kahjuks olen liiga laisk!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-text">
+        <div class="row justify-content-center m-4">
+            <div class="col-md-6 text-center">
+                <h1 class="headers">Meie Teenused</h1>
+                <p class="card-text">Otsingu luubil saan klikkida ja kuvatakse hüpikmenüüna otsingukast!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-business m-4">
+      <div class="row m-4">
+          <div class="col-md-4">
+              <div class="card border mb-3 hover h-100 " >
+                  <div class="card-header bg-transparent "><i class="bi bi-currency-euro text-danger" style="font-size: 3rem;"></i></div>
+                  <div class="card-body d-flex flex-column">
+                     <p class="card-text">Lorem ipsum</p>
+                      <h5 class="card-title">Business</h5>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum magni voluptatem voluptates! Ratione optio, sed eos laudantium ipsum deserunt?</p>
+                      <button class="btn btn-danger mt-auto small-button">Loe siit</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card border mb-3 hover h-100 " >
+                  <div class="card-header bg-transparent "><i class="bi bi-archive-fill text-primary" style="font-size: 3rem;"></i></div>
+                  <div class="card-body d-flex flex-column">
+
+                      <p class="card-text">Lorem ipsum</p>
+                      <h5 class="card-title">Business</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vitae blanditiis necessitatibus molestias quas suscipit tenetur culpa maxime excepturi laudantium?</p>
+                      <button class="btn btn-primary mt-auto small-button">Loe siit</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card border mb-3 hover h-100 ">
+                  <div class="card-header bg-transparent "><i class="bi bi-hdd-rack text-success" style="font-size: 3rem;"></i></div>
+                  <div class="card-body d-flex flex-column">
+                      <p class="card-text">Lorem ipsum</p>
+                      <h5 class="card-title">Business</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate quia cupiditate. Reprehenderit obcaecati tempore provident neque, rerum accusamus saepe!</p>
+                      <button class="btn btn-success mt-auto small-button">Loe siit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <div class="container-text">
+      <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+              <h1 class="headers">Meie tehtud tööd</h1>
+              <p class="card-text">Seekord pääsesin selliselt</p>
+          </div>
+      </div>
+  </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
